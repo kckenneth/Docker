@@ -33,6 +33,7 @@ $ docker service ls
 ```
 $ docker-compose up -d
 ```
+Example of <a href="https://github.com/kckenneth/Docker/blob/master/docker-compose.yml">`docker-compose.yml`</a> 
 
 # To end
 
