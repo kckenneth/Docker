@@ -29,6 +29,25 @@ $ docker node ls            # only when you have VM running
 $ docker service ls
 ```
 
+# To search Docker images
+
+```
+$ docker search <key words>
+
+$ docker search ubuntu
+NAME                                                      DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+ubuntu                                                    Ubuntu is a Debian-based Linux operating sys…   9859                [OK]                
+dorowu/ubuntu-desktop-lxde-vnc                            Docker image to provide HTML5 VNC interface …   335                                     [OK]
+rastasheep/ubuntu-sshd                                    Dockerized SSH service, built on top of offi…   228                                     [OK]
+consol/ubuntu-xfce-vnc                                    Ubuntu container with "headless" VNC session…   186                                     [OK]
+ubuntu-upstart                                            Upstart is an event-based replacement for th…   99                  [OK]                
+```
+- NAME : Is the name of the docker image.
+- DESCRIPTION : A short description on what the image is about.
+- STARS : How many people have liked the image.
+- OFFICIAL : Specifies whether the image is built from a trusted source.
+- AUTOMATED : Tells whether the images is built automatically with a push in GitHub or Bitbucket repositories.
+
 # To start
 
 ```
