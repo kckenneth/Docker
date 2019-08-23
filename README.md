@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 $ docker ps -a              # list containers, including the ones running in the background
 $ docker-compose ps         # list cluster 
-$ docker images             # list images
+$ docker images             # list images, registry in your local computer 
 $ docker image ls  
 $ docker container ls       # list containers, ~ $ docker ps -a
 $ docker container ls -q
@@ -43,6 +43,7 @@ $ docker container stop <ID>
 $ docker-compose down
 $ docker rm <ID>
 $ docker rm -f $(docker ps -aq)       # force quit all containers
+$ docker rmi $(docker images -a -q)   # delete all local images
 ```
 
 # Building A Docker Image 
