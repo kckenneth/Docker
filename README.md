@@ -53,6 +53,8 @@ ubuntu-upstart                                            Upstart is an event-ba
 To start and stop docker deamon
 ```
 $ sudo service docker start 
+# OR
+$ sudo systemctl start docker
 
 # if you want to check after starting the deamon
 # sudo docker ps -a 
