@@ -450,3 +450,14 @@ If you want to mount the volume
 ```
 $ docker run -it -v /Users/test:/test midsw205/spark-python:0.0.5 pyspark
 ```
+
+## Transfer files in and out of Docker container 
+
+https://www.tutorialspoint.com/copy-files-from-docker-container-to-local-machine
+```
+sudo docker cp <Container ID>:<Path of file inside the container> <Path in the local machine>
+
+```
+    
+    
+    
