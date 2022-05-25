@@ -459,7 +459,7 @@ sudo docker cp <Container ID>:<Path of file inside the container> <Path in the l
 ```
     
 ## Note
-You can think of a docker image as a template. A template is snapshot of an already existing container or a snapshot of what it should look like as a container. Some snapshot or images are already available. So you don't need to build the image from scratch. If there's no image that you like and you want to build your own template, you can do so by `DockerFile`, then build the image or template. Only when you have a template/image, you can then run the container based upon the image. A container is where you can modify files, execute and write. Anything written inside the container will be in `writable layer` of a container. Any modifications will not be imprinted on the template. Once you stop the container, you'd lose all the modifications. Remember, 
+You can think of a docker image as a template. A template is a snapshot of an already existing container or a snapshot of what it should look like as a container. Some snapshots or images are already available, eg, `ubuntu`. So you don't need to build the image from scratch. If there's no image that you like and you want to build your own template, you can do so by `Dockerfile`, then build the image or template. Only when you have a template/image, you can then run the container based upon the image. A container is where you can modify files, execute and write. Anything written inside the container will be in `writable layer` of a container. Any modifications will not be imprinted on the template. Once you stop the container, you'd lose all the modifications. Remember, 
     
 ```
 docker build <image>             # build an image/template based on DockerFile
